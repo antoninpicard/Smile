@@ -1,0 +1,704 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAA318D22A02D08100B1FDEE /* BobaMilky.otf in Resources */ = {isa = PBXBuildFile; fileRef = EAA318D12A02D08100B1FDEE /* BobaMilky.otf */; };
+		EAA318D32A02D08D00B1FDEE /* BobaMilky.otf in Resources */ = {isa = PBXBuildFile; fileRef = EAA318D12A02D08100B1FDEE /* BobaMilky.otf */; };
+		EAA318DB2A02F33D00B1FDEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFD26E2A018B560087ED21 /* ContentView.swift */; };
+		EAFFD2682A018B560087ED21 /* Smile Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EAFFD2672A018B560087ED21 /* Smile Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EAFFD26D2A018B560087ED21 /* SmileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFD26C2A018B560087ED21 /* SmileApp.swift */; };
+		EAFFD2712A018B580087ED21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFFD2702A018B580087ED21 /* Assets.xcassets */; };
+		EAFFD2742A018B580087ED21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFFD2732A018B580087ED21 /* Preview Assets.xcassets */; };
+		EAFFD27E2A018B580087ED21 /* Smile_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFD27D2A018B580087ED21 /* Smile_Watch_AppTests.swift */; };
+		EAFFD2882A018B580087ED21 /* Smile_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFD2872A018B580087ED21 /* Smile_Watch_AppUITests.swift */; };
+		EAFFD28A2A018B580087ED21 /* Smile_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFD2892A018B580087ED21 /* Smile_Watch_AppUITestsLaunchTests.swift */; };
+		EAFFD29B2A018F620087ED21 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFD29A2A018F620087ED21 /* DataProvider.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAFFD2692A018B560087ED21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAFFD25B2A018B560087ED21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAFFD2662A018B560087ED21;
+			remoteInfo = "Smile Watch App";
+		};
+		EAFFD27A2A018B580087ED21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAFFD25B2A018B560087ED21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAFFD2662A018B560087ED21;
+			remoteInfo = "Smile Watch App";
+		};
+		EAFFD2842A018B580087ED21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAFFD25B2A018B560087ED21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAFFD2662A018B560087ED21;
+			remoteInfo = "Smile Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EAFFD2902A018B580087ED21 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EAFFD2682A018B560087ED21 /* Smile Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EAA318D12A02D08100B1FDEE /* BobaMilky.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BobaMilky.otf; path = ../../../Downloads/boba_milky/BobaMilky.otf; sourceTree = "<group>"; };
+		EAA318D42A02D42900B1FDEE /* Smile-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Smile-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		EAFFD2612A018B560087ED21 /* Smile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFFD2672A018B560087ED21 /* Smile Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smile Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFFD26C2A018B560087ED21 /* SmileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileApp.swift; sourceTree = "<group>"; };
+		EAFFD26E2A018B560087ED21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EAFFD2702A018B580087ED21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAFFD2732A018B580087ED21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EAFFD2792A018B580087ED21 /* Smile Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smile Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFFD27D2A018B580087ED21 /* Smile_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smile_Watch_AppTests.swift; sourceTree = "<group>"; };
+		EAFFD2832A018B580087ED21 /* Smile Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smile Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFFD2872A018B580087ED21 /* Smile_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smile_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		EAFFD2892A018B580087ED21 /* Smile_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smile_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EAFFD29A2A018F620087ED21 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAFFD2642A018B560087ED21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFFD2762A018B580087ED21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFFD2802A018B580087ED21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAFFD25A2A018B560087ED21 = {
+			isa = PBXGroup;
+			children = (
+				EAFFD26B2A018B560087ED21 /* Smile Watch App */,
+				EAFFD27C2A018B580087ED21 /* Smile Watch AppTests */,
+				EAFFD2862A018B580087ED21 /* Smile Watch AppUITests */,
+				EAFFD2622A018B560087ED21 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAFFD2622A018B560087ED21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAFFD2612A018B560087ED21 /* Smile.app */,
+				EAFFD2672A018B560087ED21 /* Smile Watch App.app */,
+				EAFFD2792A018B580087ED21 /* Smile Watch AppTests.xctest */,
+				EAFFD2832A018B580087ED21 /* Smile Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAFFD26B2A018B560087ED21 /* Smile Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				EAA318D42A02D42900B1FDEE /* Smile-Watch-App-Info.plist */,
+				EAFFD26C2A018B560087ED21 /* SmileApp.swift */,
+				EAFFD29A2A018F620087ED21 /* DataProvider.swift */,
+				EAFFD26E2A018B560087ED21 /* ContentView.swift */,
+				EAFFD2702A018B580087ED21 /* Assets.xcassets */,
+				EAA318D12A02D08100B1FDEE /* BobaMilky.otf */,
+				EAFFD2722A018B580087ED21 /* Preview Content */,
+			);
+			path = "Smile Watch App";
+			sourceTree = "<group>";
+		};
+		EAFFD2722A018B580087ED21 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EAFFD2732A018B580087ED21 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EAFFD27C2A018B580087ED21 /* Smile Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAFFD27D2A018B580087ED21 /* Smile_Watch_AppTests.swift */,
+			);
+			path = "Smile Watch AppTests";
+			sourceTree = "<group>";
+		};
+		EAFFD2862A018B580087ED21 /* Smile Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAFFD2872A018B580087ED21 /* Smile_Watch_AppUITests.swift */,
+				EAFFD2892A018B580087ED21 /* Smile_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "Smile Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAFFD2602A018B560087ED21 /* Smile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFFD2912A018B580087ED21 /* Build configuration list for PBXNativeTarget "Smile" */;
+			buildPhases = (
+				EAFFD25F2A018B560087ED21 /* Resources */,
+				EAFFD2902A018B580087ED21 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAFFD26A2A018B560087ED21 /* PBXTargetDependency */,
+			);
+			name = Smile;
+			productName = Smile;
+			productReference = EAFFD2612A018B560087ED21 /* Smile.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		EAFFD2662A018B560087ED21 /* Smile Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFFD28D2A018B580087ED21 /* Build configuration list for PBXNativeTarget "Smile Watch App" */;
+			buildPhases = (
+				EAFFD2632A018B560087ED21 /* Sources */,
+				EAFFD2642A018B560087ED21 /* Frameworks */,
+				EAFFD2652A018B560087ED21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Smile Watch App";
+			productName = "Smile Watch App";
+			productReference = EAFFD2672A018B560087ED21 /* Smile Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAFFD2782A018B580087ED21 /* Smile Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFFD2942A018B580087ED21 /* Build configuration list for PBXNativeTarget "Smile Watch AppTests" */;
+			buildPhases = (
+				EAFFD2752A018B580087ED21 /* Sources */,
+				EAFFD2762A018B580087ED21 /* Frameworks */,
+				EAFFD2772A018B580087ED21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAFFD27B2A018B580087ED21 /* PBXTargetDependency */,
+			);
+			name = "Smile Watch AppTests";
+			productName = "Smile Watch AppTests";
+			productReference = EAFFD2792A018B580087ED21 /* Smile Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EAFFD2822A018B580087ED21 /* Smile Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFFD2972A018B580087ED21 /* Build configuration list for PBXNativeTarget "Smile Watch AppUITests" */;
+			buildPhases = (
+				EAFFD27F2A018B580087ED21 /* Sources */,
+				EAFFD2802A018B580087ED21 /* Frameworks */,
+				EAFFD2812A018B580087ED21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAFFD2852A018B580087ED21 /* PBXTargetDependency */,
+			);
+			name = "Smile Watch AppUITests";
+			productName = "Smile Watch AppUITests";
+			productReference = EAFFD2832A018B580087ED21 /* Smile Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAFFD25B2A018B560087ED21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EAFFD2602A018B560087ED21 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					EAFFD2662A018B560087ED21 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					EAFFD2782A018B580087ED21 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = EAFFD2662A018B560087ED21;
+					};
+					EAFFD2822A018B580087ED21 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = EAFFD2662A018B560087ED21;
+					};
+				};
+			};
+			buildConfigurationList = EAFFD25E2A018B560087ED21 /* Build configuration list for PBXProject "Smile" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAFFD25A2A018B560087ED21;
+			productRefGroup = EAFFD2622A018B560087ED21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAFFD2602A018B560087ED21 /* Smile */,
+				EAFFD2662A018B560087ED21 /* Smile Watch App */,
+				EAFFD2782A018B580087ED21 /* Smile Watch AppTests */,
+				EAFFD2822A018B580087ED21 /* Smile Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAFFD25F2A018B560087ED21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA318D32A02D08D00B1FDEE /* BobaMilky.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFFD2652A018B560087ED21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFFD2742A018B580087ED21 /* Preview Assets.xcassets in Resources */,
+				EAA318D22A02D08100B1FDEE /* BobaMilky.otf in Resources */,
+				EAFFD2712A018B580087ED21 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFFD2772A018B580087ED21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFFD2812A018B580087ED21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAFFD2632A018B560087ED21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFFD29B2A018F620087ED21 /* DataProvider.swift in Sources */,
+				EAFFD26D2A018B560087ED21 /* SmileApp.swift in Sources */,
+				EAA318DB2A02F33D00B1FDEE /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFFD2752A018B580087ED21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFFD27E2A018B580087ED21 /* Smile_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFFD27F2A018B580087ED21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFFD2882A018B580087ED21 /* Smile_Watch_AppUITests.swift in Sources */,
+				EAFFD28A2A018B580087ED21 /* Smile_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAFFD26A2A018B560087ED21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAFFD2662A018B560087ED21 /* Smile Watch App */;
+			targetProxy = EAFFD2692A018B560087ED21 /* PBXContainerItemProxy */;
+		};
+		EAFFD27B2A018B580087ED21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAFFD2662A018B560087ED21 /* Smile Watch App */;
+			targetProxy = EAFFD27A2A018B580087ED21 /* PBXContainerItemProxy */;
+		};
+		EAFFD2852A018B580087ED21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAFFD2662A018B560087ED21 /* Smile Watch App */;
+			targetProxy = EAFFD2842A018B580087ED21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EAFFD28B2A018B580087ED21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				"DEBUG_INFORMATION_FORMAT[sdk=*]" = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAFFD28C2A018B580087ED21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EAFFD28E2A018B580087ED21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Smile Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = A49A786BYU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Smile-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Smile;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Antonin.Smile.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		EAFFD28F2A018B580087ED21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Smile Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = A49A786BYU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Smile-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Smile;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Antonin.Smile.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		EAFFD2922A018B580087ED21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A49A786BYU;
+				INFOPLIST_KEY_CFBundleDisplayName = Smile;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Antonin.Smile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EAFFD2932A018B580087ED21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A49A786BYU;
+				INFOPLIST_KEY_CFBundleDisplayName = Smile;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Antonin.Smile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAFFD2952A018B580087ED21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Antonin.Smile-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smile Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Smile Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		EAFFD2962A018B580087ED21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Antonin.Smile-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smile Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Smile Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		EAFFD2982A018B580087ED21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Antonin.Smile-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Smile Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		EAFFD2992A018B580087ED21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Antonin.Smile-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Smile Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAFFD25E2A018B560087ED21 /* Build configuration list for PBXProject "Smile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFFD28B2A018B580087ED21 /* Debug */,
+				EAFFD28C2A018B580087ED21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFFD28D2A018B580087ED21 /* Build configuration list for PBXNativeTarget "Smile Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFFD28E2A018B580087ED21 /* Debug */,
+				EAFFD28F2A018B580087ED21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFFD2912A018B580087ED21 /* Build configuration list for PBXNativeTarget "Smile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFFD2922A018B580087ED21 /* Debug */,
+				EAFFD2932A018B580087ED21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFFD2942A018B580087ED21 /* Build configuration list for PBXNativeTarget "Smile Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFFD2952A018B580087ED21 /* Debug */,
+				EAFFD2962A018B580087ED21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFFD2972A018B580087ED21 /* Build configuration list for PBXNativeTarget "Smile Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFFD2982A018B580087ED21 /* Debug */,
+				EAFFD2992A018B580087ED21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAFFD25B2A018B560087ED21 /* Project object */;
+}
