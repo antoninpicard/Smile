@@ -3,14 +3,13 @@ import SwiftUI
 
 struct DataProvider {
     static let phrases = [
-        "Je t'aime comme le feu des dragons",
-        "<3",
-        "Crois moi tu es la meilleure",
-        "Pense a un truc... sache que tu es capable de le faire"
+        "Phrase 1",
+        "Phrase 2",
+        "Phrase 3",
+        "Phrase 4"
     ]
     static let images = [
         "chien",
-        "anto",
     ]
     
     static var lastPhrase: String?
