@@ -30,42 +30,63 @@ extension Color {
 }
 
 struct ContentView: View {
-    @State private var currentContent: (String?, String?) = DataProvider.getRandomContent()
+    @State private var currentContent: String = ""
+    @State private var currentImageUrl: URL? = nil
     @State private var contentOpacity: Double = 1.0
+    @State private var imageOpacity: Double = 1.0
     @State private var timerCancellable: AnyCancellable?
+    @State private var displayImage: Bool = false
     @Environment(\.scenePhase) var scenePhase
 
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                if let phrase = currentContent.0 {
-                    Text(phrase)
+                if displayImage, let imageUrl = currentImageUrl {
+                    AsyncImage(url: imageUrl, scale: 1.0) { image in
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .opacity(imageOpacity)
+                    } placeholder: {
+                        ProgressView()
+                    }
+                    .edgesIgnoringSafeArea(.all)
+                } else {
+                    Text(currentContent)
                         .font(.custom("Boba Milky", size: 18))
                         .multilineTextAlignment(.center)
                         .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
                         .opacity(contentOpacity)
                 }
-                
-                if let imageName = currentContent.1 {
-                    Image(imageName)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-                        .background(Color.clear)
-                        .edgesIgnoringSafeArea(.all)
-                        .opacity(contentOpacity)
-                }
             }
             .background(Color(hex: "CC7178"))
+
         }
         .onChange(of: scenePhase) { newScenePhase in
             switch newScenePhase {
             case .active:
                 timerCancellable = Timer.publish(every: 10, on: .main, in: .common).autoconnect().sink { _ in
-                    contentOpacity = 0.0
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                        currentContent = DataProvider.getRandomContent()
-                        contentOpacity = 1.0
+                    displayImage.toggle()
+                    if displayImage {
+                        imageOpacity = 0.0
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                            DataProvider.getRandomImage { imageUrl in
+                                DispatchQueue.main.async {
+                                    currentImageUrl = imageUrl
+                                    imageOpacity = 1.0
+                                }
+                            }
+                        }
+                    } else {
+                        contentOpacity = 0.0
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                            DataProvider.getRandomPhrase { phrase in
+                                DispatchQueue.main.async {
+                                    currentContent = phrase
+                                    contentOpacity = 1.0
+                                }
+                            }
+                        }
                     }
                 }
             case .background, .inactive:
@@ -76,8 +97,12 @@ struct ContentView: View {
             }
         }
         .animation(.easeInOut(duration: 0.5), value: contentOpacity)
+        .animation(.easeInOut(duration: 0.5), value: imageOpacity)
     }
 }
+
+
+
 
 
 struct ContentView_Previews: PreviewProvider {
@@ -85,4 +110,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-

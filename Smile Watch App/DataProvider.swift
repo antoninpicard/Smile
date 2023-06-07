@@ -1,45 +1,38 @@
 import Foundation
-import SwiftUI
 
 struct DataProvider {
-    static let phrases = [
-        "Phrase 1",
-        "Phrase 2",
-        "Phrase 3",
-        "Phrase 4"
-    ]
-    static let images = [
-        "chien",
-    ]
     
-    static var lastPhrase: String?
-    static var lastImage: String?
-
-    static func getRandomPhrase() -> String {
-        var newPhrase: String
-        repeat {
-            newPhrase = phrases.randomElement() ?? "Aucune phrase Disponible"
-        } while newPhrase == lastPhrase
-        lastPhrase = newPhrase
-        return newPhrase
-    }
+    static func getRandomPhrase(completion: @escaping (String) -> Void) {
+        let url = URL(string: "https://smile-api.vercel.app/api/randomcontroller/randomphrase")!
         
-    static func getRandomImage() -> String {
-        var newImage: String
-        repeat {
-            newImage = images.randomElement() ?? "Aucune image Disponible"
-        } while newImage == lastImage
-        lastImage = newImage
-        return newImage
-    }
-    
-    static func getRandomContent() -> (String?, String?) {
-        let contentType = Int.random(in: 0...1)
-        
-        if contentType == 0 {
-            return (getRandomPhrase(), nil)
-        } else {
-            return (nil, getRandomImage())
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let error = error {
+                print("Erreur lors de la récupération de la phrase: \(error)")
+                completion("Erreur lors de la récupération de la phrase")
+            } else if let data = data {
+                let phrase = String(data: data, encoding: .utf8)
+                completion(phrase ?? "Erreur lors de la décodage de la phrase")
+            }
         }
+        task.resume()
     }
+    
+    static func getRandomImage(completion: @escaping (URL?) -> Void) {
+        let url = URL(string: "https://smile-api.vercel.app/api/randomcontroller/randomimage")!
+        
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let error = error {
+                print("Erreur lors de la récupération du nom de l'image: \(error)")
+                completion(nil)
+            } else if let data = data,
+                      let jsonString = String(data: data, encoding: .utf8),
+                      let imageJson = try? JSONDecoder().decode([String: String].self, from: jsonString.data(using: .utf8)!),
+                      let imageName = imageJson["imageName"] {
+                let imageURL = URL(string: "https://smile-api.vercel.app/Images/" + imageName)
+                completion(imageURL)
+            }
+        }
+        task.resume()
+    }
+
 }
